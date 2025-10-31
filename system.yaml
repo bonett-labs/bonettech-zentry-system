@@ -1,0 +1,205 @@
+# ============================================
+# SISTEMAS - BONETTTECH
+# ============================================
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: mobile-platform
+  title: Mobile Platform
+  description: Plataforma de aplicativos mobile iOS e Android
+  tags:
+    - system
+    - mobile
+  links:
+    - url: https://app.bonetttech.com
+      title: App Store
+      icon: mobile
+    - url: https://play.google.com/store/apps/details?id=com.bonetttech
+      title: Play Store
+      icon: mobile
+spec:
+  owner: tribe-mobile-apps
+  domain: customer-experience
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: web-platform
+  title: Web Platform
+  description: Plataforma web com portal do cliente e dashboard administrativo
+  tags:
+    - system
+    - web
+    - frontend
+  links:
+    - url: https://portal.bonetttech.com
+      title: Customer Portal
+      icon: dashboard
+    - url: https://admin.bonetttech.com
+      title: Admin Dashboard
+      icon: dashboard
+spec:
+  owner: tribe-web-platforms
+  domain: customer-experience
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: payment-platform
+  title: Payment Platform
+  description: Plataforma de processamento de pagamentos e transações
+  tags:
+    - system
+    - payments
+    - fintech
+  links:
+    - url: https://payments.bonetttech.com/health
+      title: Health Check
+      icon: monitoring
+spec:
+  owner: vp-technology
+  domain: payments
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: ml-platform
+  title: ML Platform
+  description: Plataforma de Machine Learning e modelos de IA
+  tags:
+    - system
+    - ml
+    - ai
+  links:
+    - url: https://mlflow.bonetttech.com
+      title: MLflow
+      icon: ai
+    - url: https://kubeflow.bonetttech.com
+      title: Kubeflow
+      icon: ai
+spec:
+  owner: tribe-machine-learning
+  domain: data-intelligence
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: data-platform
+  title: Data Platform
+  description: Plataforma de dados com data lake e pipelines ETL
+  tags:
+    - system
+    - data
+    - analytics
+  links:
+    - url: https://airflow.bonetttech.com
+      title: Airflow
+      icon: data
+    - url: https://metabase.bonetttech.com
+      title: Metabase
+      icon: dashboard
+spec:
+  owner: tribe-data-engineering
+  domain: data-intelligence
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: auth-platform
+  title: Authentication Platform
+  description: Plataforma de autenticação e gestão de identidades
+  tags:
+    - system
+    - auth
+    - security
+  links:
+    - url: https://auth.bonetttech.com
+      title: Auth Service
+      icon: user
+spec:
+  owner: tribe-security
+  domain: authentication
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: blockchain-platform
+  title: Blockchain Platform
+  description: Plataforma Web3 e Smart Contracts
+  tags:
+    - system
+    - blockchain
+    - web3
+spec:
+  owner: tribe-blockchain
+  domain: emerging-technologies
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: iot-platform
+  title: IoT Platform
+  description: Plataforma de Internet das Coisas e Edge Computing
+  tags:
+    - system
+    - iot
+    - edge
+spec:
+  owner: tribe-iot-edge
+  domain: emerging-technologies
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: devtools-platform
+  title: Developer Tools Platform
+  description: Ferramentas internas para desenvolvedores
+  tags:
+    - system
+    - devtools
+    - platform
+  links:
+    - url: https://backstage.bonetttech.com
+      title: Backstage
+      icon: catalog
+    - url: https://gitlab.bonetttech.com
+      title: GitLab
+      icon: github
+spec:
+  owner: tribe-devtools
+  domain: platform-services
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: observability-platform
+  title: Observability Platform
+  description: Plataforma de monitoramento, logs e métricas
+  tags:
+    - system
+    - observability
+    - monitoring
+  links:
+    - url: https://grafana.bonetttech.com
+      title: Grafana
+      icon: dashboard
+    - url: https://kibana.bonetttech.com
+      title: Kibana
+      icon: search
+    - url: https://prometheus.bonetttech.com
+      title: Prometheus
+      icon: monitoring
+spec:
+  owner: tribe-devops-sre
+  domain: platform-services
