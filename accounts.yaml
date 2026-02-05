@@ -1,0 +1,53 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: devtools_aws_dev
+  title: AWS Account DevTools - Dev
+  description: Conta AWS do ambiente DEV do sistema DevTools Platform
+  tags:
+    - aws
+    - account
+    - dev
+  annotations:
+    github.com/project-slug: bonett-labs/devtools-aws-dev
+    aws.amazon.com/account-id: "111111111111"
+spec:
+  type: aws-account
+  owner: group:default/tribe-devtools
+  system: system:default/devtools-platform
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: devtools_aws_hml
+  title: AWS Account DevTools - HML
+  description: Conta AWS do ambiente HML do sistema DevTools Platform
+  tags:
+    - aws
+    - account
+    - hml
+  annotations:
+    github.com/project-slug: bonett-labs/devtools-aws-hml
+    aws.amazon.com/account-id: "222222222222"
+spec:
+  type: aws-account
+  owner: group:default/tribe-devtools
+  system: system:default/devtools-platform
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: devtools_aws_prd
+  title: AWS Account DevTools - Prod
+  description: Conta AWS do ambiente PROD do sistema DevTools Platform
+  tags:
+    - aws
+    - account
+    - prd
+  annotations:
+    github.com/project-slug: bonett-labs/devtools-aws-prd
+    aws.amazon.com/account-id: "333333333333"
+spec:
+  type: aws-account
+  owner: group:default/tribe-devtools
+  system: system:default/devtools-platform
